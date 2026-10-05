@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>شركة طاقات الفولاذ</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; background:#f9f9f9; }
+    header { background:#e67e22; color:white; padding:20px; text-align:center; }
+    nav { background:#333; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; }
+    nav a:hover { color:#e67e22; }
+    .hero { padding:50px; text-align:center; }
+    .hero img { max-width:200px; }
+    .btn { background:#e67e22; color:white; padding:15px 25px; border-radius:8px; text-decoration:none; cursor:pointer; }
+    .btn:hover { background:#d35400; }
+
+    /* شريط أفقي */
+    .grid {
+      display:flex;
+      flex-direction:row;
+      gap:20px;
+      margin:20px;
+      overflow-x:auto;
+      padding:10px;
+      scroll-behavior:smooth;
+    }
+    .grid::-webkit-scrollbar { display:none; }
+
+    /* إطار ثابت لكل صورة */
+    .frame {
+      width:280px;
+      height:140px;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 2px 6px rgba(0,0,0,0.2);
+      flex:0 0 auto;
+    }
+    .frame img {
+      width:100%;
+      height:100%;
+      object-fit:cover; /* قصّ الصورة لتملأ الإطار */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>شركة طاقات الفولاذ لبيع حديد التسليح</h1>
+  </header>
+  <nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">المنتجات</a>
+    <a href="#about">من نحن</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
+
+  <div class="hero" id="home">
+    <img src="logo.png" alt="شعار الشركة">
+    <h2>اطلب الحديد أونلاين بسهولة وسرعة</h2>
+    <a href="#products" class="btn">تسوق الآن</a>
+  </div>
+
+  <h1 id="products">أنواع الحديد المتوفرة</h1>
+  <div class="grid" id="productGrid">
+    <div class="frame"><img src="https://i.imgur.com/kgKHA54.jpeg" alt="عراق ستيل"></div>
+    <div class="frame"><img src="https://i.imgur.com/79zuNIj.jpeg" alt="هلال بابل"></div>
+    <div class="frame"><img src="https://i.imgur.com/KY8hILV.jpeg" alt="erg"></div>
+    <div class="frame"><img src="https://i.imgur.com/tmjBChK.jpeg" alt="فرات الخير"></div>
+    <div class="frame"><img src="https://i.imgur.com/vowTxb1.jpeg" alt="فان ستيل"></div>
+    <div class="frame"><img src="https://i.imgur.com/4JaMgKC.jpeg" alt="حديد العراقين"></div>
+
+    <!-- حديد ff بالصورة الجديدة -->
+    <div class="frame"><img src="https://i.imgur.com/uEREmw9.jpeg" alt="حديد ff"></div>
+
+    <div class="frame"><img src="https://i.imgur.com/ey3bLDh.jpeg" alt="أربيل ستيل"></div>
+    <div class="frame"><img src="https://i.imgur.com/OaB9xF7.jpeg" alt="حديد ماس"></div>
+    <div class="frame"><img src="https://i.imgur.com/KvRlUi0.png" alt="حديد سابك"></div>
+    <div class="frame"><img src="https://i.imgur.com/XqCCnMN.jpeg" alt="حديد جزيرة"></div>
+    <div class="frame"><img src="https://i.imgur.com/incUgAu.jpeg" alt="ستار ستيل"></div>
+  </div>
+
+  <!-- من نحن -->
+  <div id="about" style="padding:30px; text-align:center;">
+    <h2>من نحن</h2>
+    <p>شركة طاقات الفولاذ متخصصة في بيع حديد التسليح بجودة عالية وأسعار تنافسية، مستوحاة من أفضل الممارسات العالمية.</p>
+  </div>
+
+  <!-- تواصل معنا -->
+  <div id="contact" style="padding:30px; text-align:center;">
+    <h2>تواصل معنا</h2>
+    <p>الهاتف: 0770-000-0000</p>
+    <p>البريد الإلكتروني: info@taqaatsteel.com</p>
+  </div>
+
+  <footer>
+    <p>© 2026 شركة طاقات الفولاذ</p>
+  </footer>
+</body>
+</html>
